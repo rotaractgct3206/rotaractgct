@@ -113,7 +113,7 @@ export default function Home() {
             TOP LOGO BANNER
         ════════════════════════════════════════ */}
         <div 
-          className="px-4 py-8 md:px-12 md:py-8 bg-transparent"
+          className="px-4 py-8 md:px-12 md:pb-8 lg:pt-24 bg-transparent"
         >
         <div 
           className="flex flex-col md:grid md:grid-cols-[1fr_auto_1fr] items-center gap-4 md:gap-10 text-center"
@@ -383,7 +383,7 @@ export default function Home() {
             gap: '32px',
           }}>
           {[
-            { value: '13+',   label: 'Years of Service' },
+            { value: '10+',   label: 'Years of Service' },
             { value: '25+',   label: 'Active Members' },
             { value: '3206', label: 'Rotary District' },
             { value: '500+',    label: 'Service projects' },
