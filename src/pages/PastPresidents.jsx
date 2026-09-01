@@ -144,11 +144,11 @@ export default function PastPresidents() {
       }} />
 
       {/* ── Page body ── */}
-      <div style={{ maxWidth: '960px', margin: '0 auto', padding: '120px 24px 100px', position: 'relative', zIndex: 1 }}>
+      <div style={{ maxWidth: '960px', margin: '0 auto', padding: '24px 24px 100px', position: 'relative', zIndex: 1 }}>
 
         {/* ── Heading ── */}
         <div style={{
-          textAlign: 'center', marginBottom: '80px',
+          textAlign: 'center',
           opacity: headIn ? 1 : 0,
           transform: headIn ? 'scale(1)' : 'scale(0.8)',
           transition: 'opacity 0.6s ease, transform 0.6s cubic-bezier(0.34,1.56,0.64,1)',
