@@ -15,6 +15,7 @@ import DppTheme from './pages/DppTheme';
 import Awards from './pages/Awards';
 import Blogs from './pages/Blogs';
 import BlogDetails from './pages/BlogDetails';
+import PastPresidents from './pages/PastPresidents';
 import Contact from './pages/Contact';
 
 function NotFound() {
@@ -50,6 +51,7 @@ export default function App() {
           <Route path="/awards" element={<Awards />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/blogs/:slug" element={<BlogDetails />} />
+          <Route path="/past-presidents" element={<PastPresidents />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

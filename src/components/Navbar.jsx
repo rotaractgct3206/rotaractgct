@@ -24,6 +24,12 @@ export default function Navbar() {
   const [awardOpen, setAwardOpen] = useState(false);
   const [flagshipOpen, setFlagshipOpen] = useState(false);
   const [dppOpen, setDppOpen] = useState(false);
+  const [mobileBoardOpen, setMobileBoardOpen] = useState(false);
+  const [mobileBulletinOpen, setMobileBulletinOpen] = useState(false);
+  const [mobileProjectOpen, setMobileProjectOpen] = useState(false);
+  const [mobileAwardOpen, setMobileAwardOpen] = useState(false);
+  const [mobileFlagshipOpen, setMobileFlagshipOpen] = useState(false);
+  const [mobileDppOpen, setMobileDppOpen] = useState(false);
   const location = useLocation();
   const boardRef = useRef(null);
   const bulletinRef = useRef(null);
@@ -46,6 +52,12 @@ export default function Navbar() {
     setAwardOpen(false);
     setFlagshipOpen(false);
     setDppOpen(false);
+    setMobileBoardOpen(false);
+    setMobileBulletinOpen(false);
+    setMobileProjectOpen(false);
+    setMobileAwardOpen(false);
+    setMobileFlagshipOpen(false);
+    setMobileDppOpen(false);
   }, [location.pathname]);
 
   // Lock body scroll when mobile menu is open
@@ -82,7 +94,7 @@ export default function Navbar() {
 
   // Separate links so Blogs and Contact can be rendered at the very end
   const startLinks = siteConfig.navLinks.filter(l => ['/', '/about'].includes(l.path));
-  const endLinks = siteConfig.navLinks.filter(l => ['/blogs', '/contact'].includes(l.path));
+  const endLinks = siteConfig.navLinks.filter(l => ['/blogs', '/past-presidents', '/contact'].includes(l.path));
   const isBoardActive = location.pathname === '/board' || location.pathname.startsWith('/board');
   const isBulletinActive = location.pathname === '/bulletins' || location.pathname.startsWith('/bulletins');
   const isProjectActive = location.pathname === '/projects' || location.pathname.startsWith('/projects');
@@ -1108,293 +1120,324 @@ export default function Navbar() {
 
           {/* Board section — tenure list */}
           <div style={{ padding: '8px 0' }}>
-            <div style={{
-              padding: '10px 24px',
-              fontFamily: "'Poppins', sans-serif",
-              fontSize: '10px', fontWeight: 700,
-              letterSpacing: '0.2em', textTransform: 'uppercase',
-              color: '#999',
-            }}>
-              Board Tenures
-            </div>
-            {boardTenures.map((tenure, idx) => {
-              const isLatest = idx === 0;
-              return (
-                <Link
-                  key={tenure}
-                  to={`/board?tenure=${tenure}`}
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                    padding: '12px 24px',
-                    textDecoration: 'none',
-                    fontFamily: "'Poppins', sans-serif",
-                    fontSize: '13px',
-                    fontWeight: 600,
-                    color: '#1A1A1A',
-                    borderLeft: '3px solid transparent',
-                    transition: 'all 0.15s ease',
-                  }}
-                >
-                  <span>{tenureLabel(tenure)}</span>
-                  {isLatest && (
-                    <span style={{
-                      background: '#D71920', color: '#ffffff',
+            <button
+              onClick={() => setMobileBoardOpen(v => !v)}
+              style={{
+                width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                padding: '14px 24px', background: 'transparent', border: 'none', cursor: 'pointer',
+                fontFamily: "'Poppins', sans-serif", fontSize: '13px', fontWeight: 600,
+                letterSpacing: '0.05em', textTransform: 'uppercase', color: '#1A1A1A'
+              }}
+            >
+              Board
+              <ChevronDown size={16} style={{ transition: 'transform 0.3s ease', transform: mobileBoardOpen ? 'rotate(180deg)' : 'rotate(0deg)' }} />
+            </button>
+            <div style={{ overflow: 'hidden', transition: 'max-height 0.3s ease', maxHeight: mobileBoardOpen ? '1000px' : '0' }}>
+              {boardTenures.map((tenure, idx) => {
+                const isLatest = idx === 0;
+                return (
+                  <Link
+                    key={tenure}
+                    to={`/board?tenure=${tenure}`}
+                    onClick={() => setMobileOpen(false)}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      padding: '12px 24px 12px 40px',
+                      textDecoration: 'none',
                       fontFamily: "'Poppins', sans-serif",
-                      fontSize: '8px', fontWeight: 700,
-                      letterSpacing: '0.1em', textTransform: 'uppercase',
-                      padding: '2px 8px', borderRadius: '999px',
-                    }}>
-                      Current
-                    </span>
-                  )}
-                </Link>
-              );
-            })}
+                      fontSize: '13px',
+                      fontWeight: 600,
+                      color: '#1A1A1A',
+                      borderLeft: '3px solid transparent',
+                      transition: 'all 0.15s ease',
+                    }}
+                  >
+                    <span>{tenureLabel(tenure)}</span>
+                    {isLatest && (
+                      <span style={{
+                        background: '#D71920', color: '#ffffff',
+                        fontFamily: "'Poppins', sans-serif",
+                        fontSize: '8px', fontWeight: 700,
+                        letterSpacing: '0.1em', textTransform: 'uppercase',
+                        padding: '2px 8px', borderRadius: '999px',
+                      }}>
+                        Current
+                      </span>
+                    )}
+                  </Link>
+                );
+              })}
+            </div>
           </div>
 
           {/* DPP Theme section — tenure list */}
           <div style={{ padding: '8px 0', borderTop: '1px solid #F1F1F1' }}>
-            <div style={{
-              padding: '10px 24px',
-              fontFamily: "'Poppins', sans-serif",
-              fontSize: '10px', fontWeight: 700,
-              letterSpacing: '0.2em', textTransform: 'uppercase',
-              color: '#999',
-            }}>
-              DPP Tenures
-            </div>
-            {dppTenures.map((tenure, idx) => {
-              const isLatest = idx === 0;
-              return (
-                <Link
-                  key={tenure}
-                  to={`/dpp-theme?tenure=${tenure}`}
-                  onClick={() => setMobileOpen(false)}
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                    padding: '12px 24px',
-                    textDecoration: 'none',
-                    fontFamily: "'Poppins', sans-serif",
-                    fontSize: '13px',
-                    fontWeight: 600,
-                    color: '#1A1A1A',
-                    borderLeft: '3px solid transparent',
-                    transition: 'all 0.15s ease',
-                  }}
-                >
-                  <span>{tenureLabel(tenure)}</span>
-                  {isLatest && (
-                    <span style={{
-                      background: '#D71920', color: '#ffffff',
+            <button
+              onClick={() => setMobileDppOpen(v => !v)}
+              style={{
+                width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                padding: '14px 24px', background: 'transparent', border: 'none', cursor: 'pointer',
+                fontFamily: "'Poppins', sans-serif", fontSize: '13px', fontWeight: 600,
+                letterSpacing: '0.05em', textTransform: 'uppercase', color: '#1A1A1A'
+              }}
+            >
+              DPP Theme
+              <ChevronDown size={16} style={{ transition: 'transform 0.3s ease', transform: mobileDppOpen ? 'rotate(180deg)' : 'rotate(0deg)' }} />
+            </button>
+            <div style={{ overflow: 'hidden', transition: 'max-height 0.3s ease', maxHeight: mobileDppOpen ? '1000px' : '0' }}>
+              {dppTenures.map((tenure, idx) => {
+                const isLatest = idx === 0;
+                return (
+                  <Link
+                    key={tenure}
+                    to={`/dpp-theme?tenure=${tenure}`}
+                    onClick={() => setMobileOpen(false)}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      padding: '12px 24px 12px 40px',
+                      textDecoration: 'none',
                       fontFamily: "'Poppins', sans-serif",
-                      fontSize: '8px', fontWeight: 700,
-                      letterSpacing: '0.1em', textTransform: 'uppercase',
-                      padding: '2px 8px', borderRadius: '999px',
-                    }}>
-                      Current
-                    </span>
-                  )}
-                </Link>
-              );
-            })}
+                      fontSize: '13px',
+                      fontWeight: 600,
+                      color: '#1A1A1A',
+                      borderLeft: '3px solid transparent',
+                      transition: 'all 0.15s ease',
+                    }}
+                  >
+                    <span>{tenureLabel(tenure)}</span>
+                    {isLatest && (
+                      <span style={{
+                        background: '#D71920', color: '#ffffff',
+                        fontFamily: "'Poppins', sans-serif",
+                        fontSize: '8px', fontWeight: 700,
+                        letterSpacing: '0.1em', textTransform: 'uppercase',
+                        padding: '2px 8px', borderRadius: '999px',
+                      }}>
+                        Current
+                      </span>
+                    )}
+                  </Link>
+                );
+              })}
+            </div>
           </div>
 
           {/* Bulletins section — tenure list */}
           <div style={{ padding: '8px 0', borderTop: '1px solid #F1F1F1' }}>
-            <div style={{
-              padding: '10px 24px',
-              fontFamily: "'Poppins', sans-serif",
-              fontSize: '10px', fontWeight: 700,
-              letterSpacing: '0.2em', textTransform: 'uppercase',
-              color: '#999',
-            }}>
-              Bulletin Tenures
-            </div>
-            {bulletinTenures.map((tenure, idx) => {
-              const isLatest = idx === 0;
-              return (
-                <Link
-                  key={tenure}
-                  to={`/bulletins?tenure=${tenure}`}
-                  onClick={() => setMobileOpen(false)}
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                    padding: '12px 24px',
-                    textDecoration: 'none',
-                    fontFamily: "'Poppins', sans-serif",
-                    fontSize: '13px',
-                    fontWeight: 600,
-                    color: '#1A1A1A',
-                    borderLeft: '3px solid transparent',
-                    transition: 'all 0.15s ease',
-                  }}
-                >
-                  <span>{tenureLabel(tenure)}</span>
-                  {isLatest && (
-                    <span style={{
-                      background: '#D71920', color: '#ffffff',
+            <button
+              onClick={() => setMobileBulletinOpen(v => !v)}
+              style={{
+                width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                padding: '14px 24px', background: 'transparent', border: 'none', cursor: 'pointer',
+                fontFamily: "'Poppins', sans-serif", fontSize: '13px', fontWeight: 600,
+                letterSpacing: '0.05em', textTransform: 'uppercase', color: '#1A1A1A'
+              }}
+            >
+              Bulletins
+              <ChevronDown size={16} style={{ transition: 'transform 0.3s ease', transform: mobileBulletinOpen ? 'rotate(180deg)' : 'rotate(0deg)' }} />
+            </button>
+            <div style={{ overflow: 'hidden', transition: 'max-height 0.3s ease', maxHeight: mobileBulletinOpen ? '1000px' : '0' }}>
+              {bulletinTenures.map((tenure, idx) => {
+                const isLatest = idx === 0;
+                return (
+                  <Link
+                    key={tenure}
+                    to={`/bulletins?tenure=${tenure}`}
+                    onClick={() => setMobileOpen(false)}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      padding: '12px 24px 12px 40px',
+                      textDecoration: 'none',
                       fontFamily: "'Poppins', sans-serif",
-                      fontSize: '8px', fontWeight: 700,
-                      letterSpacing: '0.1em', textTransform: 'uppercase',
-                      padding: '2px 8px', borderRadius: '999px',
-                    }}>
-                      Current
-                    </span>
-                  )}
-                </Link>
-              );
-            })}
+                      fontSize: '13px',
+                      fontWeight: 600,
+                      color: '#1A1A1A',
+                      borderLeft: '3px solid transparent',
+                      transition: 'all 0.15s ease',
+                    }}
+                  >
+                    <span>{tenureLabel(tenure)}</span>
+                    {isLatest && (
+                      <span style={{
+                        background: '#D71920', color: '#ffffff',
+                        fontFamily: "'Poppins', sans-serif",
+                        fontSize: '8px', fontWeight: 700,
+                        letterSpacing: '0.1em', textTransform: 'uppercase',
+                        padding: '2px 8px', borderRadius: '999px',
+                      }}>
+                        Current
+                      </span>
+                    )}
+                  </Link>
+                );
+              })}
+            </div>
           </div>
           {/* Projects section — tenure list */}
           <div style={{ padding: '8px 0', borderTop: '1px solid #F1F1F1' }}>
-            <div style={{
-              padding: '10px 24px',
-              fontFamily: "'Poppins', sans-serif",
-              fontSize: '10px', fontWeight: 700,
-              letterSpacing: '0.2em', textTransform: 'uppercase',
-              color: '#999',
-            }}>
-              Project Tenures
-            </div>
-            {projectTenures.map((tenure, idx) => {
-              const isLatest = idx === 0;
-              return (
-                <Link
-                  key={tenure}
-                  to={`/projects?tenure=${tenure}`}
-                  onClick={() => setMobileOpen(false)}
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                    padding: '12px 24px',
-                    textDecoration: 'none',
-                    fontFamily: "'Poppins', sans-serif",
-                    fontSize: '13px',
-                    fontWeight: 600,
-                    color: '#1A1A1A',
-                    borderLeft: '3px solid transparent',
-                    transition: 'all 0.15s ease',
-                  }}
-                >
-                  <span>{tenureLabel(tenure)}</span>
-                  {isLatest && (
-                    <span style={{
-                      background: '#D71920', color: '#ffffff',
+            <button
+              onClick={() => setMobileProjectOpen(v => !v)}
+              style={{
+                width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                padding: '14px 24px', background: 'transparent', border: 'none', cursor: 'pointer',
+                fontFamily: "'Poppins', sans-serif", fontSize: '13px', fontWeight: 600,
+                letterSpacing: '0.05em', textTransform: 'uppercase', color: '#1A1A1A'
+              }}
+            >
+              Projects
+              <ChevronDown size={16} style={{ transition: 'transform 0.3s ease', transform: mobileProjectOpen ? 'rotate(180deg)' : 'rotate(0deg)' }} />
+            </button>
+            <div style={{ overflow: 'hidden', transition: 'max-height 0.3s ease', maxHeight: mobileProjectOpen ? '1000px' : '0' }}>
+              {projectTenures.map((tenure, idx) => {
+                const isLatest = idx === 0;
+                return (
+                  <Link
+                    key={tenure}
+                    to={`/projects?tenure=${tenure}`}
+                    onClick={() => setMobileOpen(false)}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      padding: '12px 24px 12px 40px',
+                      textDecoration: 'none',
                       fontFamily: "'Poppins', sans-serif",
-                      fontSize: '8px', fontWeight: 700,
-                      letterSpacing: '0.1em', textTransform: 'uppercase',
-                      padding: '2px 8px', borderRadius: '999px',
-                    }}>
-                      Current
-                    </span>
-                  )}
-                </Link>
-              );
-            })}
+                      fontSize: '13px',
+                      fontWeight: 600,
+                      color: '#1A1A1A',
+                      borderLeft: '3px solid transparent',
+                      transition: 'all 0.15s ease',
+                    }}
+                  >
+                    <span>{tenureLabel(tenure)}</span>
+                    {isLatest && (
+                      <span style={{
+                        background: '#D71920', color: '#ffffff',
+                        fontFamily: "'Poppins', sans-serif",
+                        fontSize: '8px', fontWeight: 700,
+                        letterSpacing: '0.1em', textTransform: 'uppercase',
+                        padding: '2px 8px', borderRadius: '999px',
+                      }}>
+                        Current
+                      </span>
+                    )}
+                  </Link>
+                );
+              })}
+            </div>
           </div>
           {/* Flagships section — tenure list */}
           <div style={{ padding: '8px 0', borderTop: '1px solid #F1F1F1' }}>
-            <div style={{
-              padding: '10px 24px',
-              fontFamily: "'Poppins', sans-serif",
-              fontSize: '10px', fontWeight: 700,
-              letterSpacing: '0.2em', textTransform: 'uppercase',
-              color: '#999',
-            }}>
-              Flagship Tenures
-            </div>
-            {flagshipTenures.map((tenure, idx) => {
-              const isLatest = idx === 0;
-              return (
-                <Link
-                  key={tenure}
-                  to={`/flagships?tenure=${tenure}`}
-                  onClick={() => setMobileOpen(false)}
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                    padding: '12px 24px',
-                    textDecoration: 'none',
-                    fontFamily: "'Poppins', sans-serif",
-                    fontSize: '13px',
-                    fontWeight: 600,
-                    color: '#1A1A1A',
-                    borderLeft: '3px solid transparent',
-                    transition: 'all 0.15s ease',
-                  }}
-                >
-                  <span>{tenureLabel(tenure)}</span>
-                  {isLatest && (
-                    <span style={{
-                      background: '#D71920', color: '#ffffff',
+            <button
+              onClick={() => setMobileFlagshipOpen(v => !v)}
+              style={{
+                width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                padding: '14px 24px', background: 'transparent', border: 'none', cursor: 'pointer',
+                fontFamily: "'Poppins', sans-serif", fontSize: '13px', fontWeight: 600,
+                letterSpacing: '0.05em', textTransform: 'uppercase', color: '#1A1A1A'
+              }}
+            >
+              Flagships
+              <ChevronDown size={16} style={{ transition: 'transform 0.3s ease', transform: mobileFlagshipOpen ? 'rotate(180deg)' : 'rotate(0deg)' }} />
+            </button>
+            <div style={{ overflow: 'hidden', transition: 'max-height 0.3s ease', maxHeight: mobileFlagshipOpen ? '1000px' : '0' }}>
+              {flagshipTenures.map((tenure, idx) => {
+                const isLatest = idx === 0;
+                return (
+                  <Link
+                    key={tenure}
+                    to={`/flagships?tenure=${tenure}`}
+                    onClick={() => setMobileOpen(false)}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      padding: '12px 24px 12px 40px',
+                      textDecoration: 'none',
                       fontFamily: "'Poppins', sans-serif",
-                      fontSize: '8px', fontWeight: 700,
-                      letterSpacing: '0.1em', textTransform: 'uppercase',
-                      padding: '2px 8px', borderRadius: '999px',
-                    }}>
-                      Current
-                    </span>
-                  )}
-                </Link>
-              );
-            })}
+                      fontSize: '13px',
+                      fontWeight: 600,
+                      color: '#1A1A1A',
+                      borderLeft: '3px solid transparent',
+                      transition: 'all 0.15s ease',
+                    }}
+                  >
+                    <span>{tenureLabel(tenure)}</span>
+                    {isLatest && (
+                      <span style={{
+                        background: '#D71920', color: '#ffffff',
+                        fontFamily: "'Poppins', sans-serif",
+                        fontSize: '8px', fontWeight: 700,
+                        letterSpacing: '0.1em', textTransform: 'uppercase',
+                        padding: '2px 8px', borderRadius: '999px',
+                      }}>
+                        Current
+                      </span>
+                    )}
+                  </Link>
+                );
+              })}
+            </div>
           </div>
 
           {/* Awards section — tenure list */}
           <div style={{ padding: '8px 0', borderTop: '1px solid #F1F1F1' }}>
-            <div style={{
-              padding: '10px 24px',
-              fontFamily: "'Poppins', sans-serif",
-              fontSize: '10px', fontWeight: 700,
-              letterSpacing: '0.2em', textTransform: 'uppercase',
-              color: '#999',
-            }}>
-              Award Tenures
-            </div>
-            {awardTenures.map((tenure, idx) => {
-              const isLatest = idx === 0;
-              return (
-                <Link
-                  key={tenure}
-                  to={`/awards?tenure=${tenure}`}
-                  onClick={() => setMobileOpen(false)}
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                    padding: '12px 24px',
-                    textDecoration: 'none',
-                    fontFamily: "'Poppins', sans-serif",
-                    fontSize: '13px',
-                    fontWeight: 600,
-                    color: '#1A1A1A',
-                    borderLeft: '3px solid transparent',
-                    transition: 'all 0.15s ease',
-                  }}
-                >
-                  <span>{tenureLabel(tenure)}</span>
-                  {isLatest && (
-                    <span style={{
-                      background: '#D71920', color: '#ffffff',
+            <button
+              onClick={() => setMobileAwardOpen(v => !v)}
+              style={{
+                width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                padding: '14px 24px', background: 'transparent', border: 'none', cursor: 'pointer',
+                fontFamily: "'Poppins', sans-serif", fontSize: '13px', fontWeight: 600,
+                letterSpacing: '0.05em', textTransform: 'uppercase', color: '#1A1A1A'
+              }}
+            >
+              Awards
+              <ChevronDown size={16} style={{ transition: 'transform 0.3s ease', transform: mobileAwardOpen ? 'rotate(180deg)' : 'rotate(0deg)' }} />
+            </button>
+            <div style={{ overflow: 'hidden', transition: 'max-height 0.3s ease', maxHeight: mobileAwardOpen ? '1000px' : '0' }}>
+              {awardTenures.map((tenure, idx) => {
+                const isLatest = idx === 0;
+                return (
+                  <Link
+                    key={tenure}
+                    to={`/awards?tenure=${tenure}`}
+                    onClick={() => setMobileOpen(false)}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      padding: '12px 24px 12px 40px',
+                      textDecoration: 'none',
                       fontFamily: "'Poppins', sans-serif",
-                      fontSize: '8px', fontWeight: 700,
-                      letterSpacing: '0.1em', textTransform: 'uppercase',
-                      padding: '2px 8px', borderRadius: '999px',
-                    }}>
-                      Current
-                    </span>
-                  )}
-                </Link>
-              );
-            })}
+                      fontSize: '13px',
+                      fontWeight: 600,
+                      color: '#1A1A1A',
+                      borderLeft: '3px solid transparent',
+                      transition: 'all 0.15s ease',
+                    }}
+                  >
+                    <span>{tenureLabel(tenure)}</span>
+                    {isLatest && (
+                      <span style={{
+                        background: '#D71920', color: '#ffffff',
+                        fontFamily: "'Poppins', sans-serif",
+                        fontSize: '8px', fontWeight: 700,
+                        letterSpacing: '0.1em', textTransform: 'uppercase',
+                        padding: '2px 8px', borderRadius: '999px',
+                      }}>
+                        Current
+                      </span>
+                    )}
+                  </Link>
+                );
+              })}
+            </div>
           </div>
 
           {/* End Links (Blogs & Contact) */}

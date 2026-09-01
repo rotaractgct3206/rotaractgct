@@ -19,7 +19,13 @@ export const flagships = [
       '/images/flagships/elixir/3.jpg',
     ],
     editions: [
-      { year: "ELIXIR'26", tenure: '2025-26', date: 'Upcoming' },
+      { 
+        year: "ELIXIR'26", 
+        tenure: '2025-26', 
+        date: '2025-26',
+        description: "2025–26 carried forward the legacy of ELIXIR as a Mega Medical Thiruvizha, bringing the community together with a strong focus on health, wellness, and care. Beyond the numbers, ELIXIR ’26 brought together a community committed to prioritising health, spreading awareness, and making a meaningful difference in people’s lives.",
+        impact: "5,121+ medical services were provided across General Body Checkups (1,697), Ophthalmic Aid (1,528), Dental Care (1,522), Dermatology (241), Mental Health Support (79), and PCOS/PCOD Counselling (54). 297 donors registered, with 218 blood units collected, contributing to the life-saving spirit of ELIXIR."
+      },
       { year: "ELIXIR'25", tenure: '2024-25', date: '05-03-2025 to 07-03-2025' },
       { 
         year: "ELIXIR'22", 

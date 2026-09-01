@@ -41,6 +41,7 @@ export const siteConfig = {
     { name: 'DPP THEME', path: '/dpp-theme' },
     { name: 'Awards', path: '/awards' },
     { name: 'Blogs', path: '/blogs' },
+    { name: 'Past Presidents', path: '/past-presidents' },
     { name: 'Contact', path: '/contact' },
   ],
 };

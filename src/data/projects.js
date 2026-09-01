@@ -2180,7 +2180,7 @@ export const getProjectBySlug = () => null;
 
 export const projectStats = {
   '2026-27': { total: 0, club: 0, community: 0, professional: 0, international: 0, district: 0 },
-  '2025-26': { total: 0, club: 0, community: 0, professional: 0, international: 0, district: 0 },
+  '2025-26': { total: 102, club: 20, community: 23, professional: 19, international: 18, district: 22 },
   '2024-25': { total: 165, club: 44, community: 36, professional: 50, international: 14, district: 21 },
   '2023-24': { total: 100, club: 20, community: 25, professional: 29, international: 10, district: 16 },
   '2022-23': { total: 124, club: 29, community: 39, professional: 32, international: 13, district: 11 },

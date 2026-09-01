@@ -49,6 +49,20 @@ const legacyPoints = [
   { year: '2025', text: "ELIXIR 25 – the fifth edition of the flagship Medical Thiruvizha – delivered 1,528 general medical checkups, a record 227 units of blood donation, and introduced psychiatric therapy & PCOD consultations for the first time. Earned the prestigious RSAMDIO Award.", highlight: "Record 227 Units!", accent: '#D71920', size: 'wide' },
   { year: '2025', text: "PAARVAI, a focused eye care initiative for tribal communities, provided essential vision support reflecting our continued commitment to compassionate community service.", highlight: "PAARVAI!", accent: '#D71920', size: 'normal' },
   { year: '2025', text: "ANUVAM was executed in two meaningful phases focused on digital empowerment. A Personal Computer was donated to Nizhal Charitable Trust and basic computer tools were taught to young learners, strengthening digital access and confidence.", highlight: "ANUVAM!", accent: '#D71920', size: 'normal' },
+  { 
+    year: '2026', 
+    text: "🏆 2025–26 carried forward the legacy of ELIXIR as a Mega Medical Thiruvizha, bringing the community together with a strong focus on health, wellness, and care.\n\n🩺 5,121+ medical services were provided across General Body Checkups (1,697), Ophthalmic Aid (1,528), Dental Care (1,522), Dermatology (241), Mental Health Support (79), and PCOS/PCOD Counselling (54).\n\n🩸 297 donors registered, with 218 blood units collected, contributing to the life-saving spirit of ELIXIR.\n\n✨ Beyond the numbers, ELIXIR ’26 brought together a community committed to prioritising health, spreading awareness, and making a meaningful difference in people’s lives.", 
+    highlight: "ELIXIR'26", 
+    accent: '#D71920', 
+    size: 'wide' 
+  },
+  { 
+    year: '2026', 
+    text: "ASTRA District Sportsmeet (2025–26), orchestrated under the leadership of Event Chair Rtr. Anusha, brought together sports enthusiasts across the district, fostering a spirit of healthy competition, teamwork, and camaraderie. The event showcased exceptional sporting talent while strengthening fellowship among Rotaractors and earned recognition for its successful execution and impactful contribution to sports and fellowship.", 
+    highlight: "ASTRA!", 
+    accent: '#D71920', 
+    size: 'normal' 
+  },
 ];
 
 export default function About() {
@@ -384,6 +398,7 @@ export default function About() {
                   fontSize: '15px', lineHeight: 1.85,
                   color: 'rgba(255,255,255,0.72)',
                   margin: 0, position: 'relative', zIndex: 1,
+                  whiteSpace: 'pre-wrap',
                 }}>{item.text}</p>
 
                 {/* Bottom accent line */}
