@@ -131,10 +131,24 @@ export default function About() {
               The best way to find yourself is to lose yourself in the service of others.
             </h1>
             <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+              <img 
+                src="/images/mahatma-gandhi.jpg" 
+                alt="Mahatma Gandhi" 
+                style={{
+                  width: '56px',
+                  height: '56px',
+                  borderRadius: '50%',
+                  objectFit: 'cover',
+                  border: '2px solid rgba(255, 215, 0, 0.5)',
+                  boxShadow: '0 8px 20px rgba(0,0,0,0.3)',
+                  filter: 'grayscale(20%) contrast(110%)',
+                }}
+              />
               <div style={{ width: '40px', height: '2px', background: '#FFD700' }} />
               <p style={{
                 fontFamily: "'Poppins', sans-serif",
                 fontSize: '16px', fontWeight: 600, color: '#FFD700',
+                letterSpacing: '0.05em'
               }}>
                 Mahatma Gandhi
               </p>
