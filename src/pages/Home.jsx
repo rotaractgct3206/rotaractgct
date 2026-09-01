@@ -129,7 +129,7 @@ export default function Home() {
           </div>
 
           {/* ── Centre title ── */}
-          <div style={{ textAlign: 'center' }}>
+          <div style={{ textAlign: 'center',marginTop: '20px' }}>
             <h1 style={{
               fontFamily: "'Poppins', sans-serif",
               fontWeight: 800,
