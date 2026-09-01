@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Mail, MapPin, Phone, MessageSquare } from 'lucide-react';
 import { siteConfig } from '../data/siteConfig';
-import { InstagramIcon, LinkedinIcon, FacebookIcon, YoutubeIcon } from '../components/BrandIcons';
+import { InstagramIcon, LinkedinIcon, XIcon, YoutubeIcon } from '../components/BrandIcons';
 
 export default function Contact() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
@@ -36,7 +36,7 @@ export default function Contact() {
   const socialLinks = [
     { id: 'instagram', icon: InstagramIcon, name: 'Instagram', url: siteConfig.social.instagram, label: '@rotaractgct' },
     { id: 'linkedin', icon: LinkedinIcon, name: 'LinkedIn', url: siteConfig.social.linkedin, label: 'Rotaract GCT' },
-    { id: 'facebook', icon: FacebookIcon, name: 'Facebook', url: siteConfig.social.facebook, label: 'Rotaract GCT' },
+    { id: 'x', icon: XIcon, name: 'X', url: siteConfig.social.x, label: '@Rotaractgct' },
     { id: 'youtube', icon: YoutubeIcon, name: 'YouTube', url: siteConfig.social.youtube, label: '@rotaractgct' },
   ];
 
