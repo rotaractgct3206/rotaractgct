@@ -3,7 +3,7 @@ export const pastPresidents = [
     id: 1,
     name: 'Rtr. PP. Naveen',
     tenure: '2012-13',
-    image: '/images/board/2018-19/Kavin J.jpeg',
+    image: "/images/naveen.jpeg",
   },
   {
     id: 2,
