@@ -417,7 +417,7 @@ export const boardMembers = [
     name: ' Rtr. Premkumar N',
     position: 'Director of Web Services',
     tenure: '2025-26',
-    image: '',
+    image: '/images/board/2025-26/Premkumar N 25-26.png',
     email: 'rtrpremkumarn@gmail.com'
   },
   {
