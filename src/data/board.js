@@ -56,7 +56,7 @@ export const boardMembers = [
     id: 6,
     name: 'Rtr. Gowsika M',
     position: 'Chairperson of all service projects',
-    tenure: '2026-27',
+    tenure: '2026-27 ',
     image: '/images/board/2026-27/Gowsika.jpeg',
     email: 'rtr.gowsikam@gmail.com',
   },
@@ -417,7 +417,7 @@ export const boardMembers = [
     name: ' Rtr. Premkumar N',
     position: 'Director of Web Services',
     tenure: '2025-26',
-    image: '/images/board/2025-26/Premkumar N 25-26.png',
+    image: '',
     email: 'rtrpremkumarn@gmail.com'
   },
   {

@@ -34,7 +34,7 @@ export const projects = [
     eventName: 'FITSTART',
     tenure: '2025-26',
     picture: '/images/projects/2025-26/FITSTART.jpg',
-    content: `"Stretch, Strengthen, Shine!"\nWe, the Rotaract Club of GCT Coimbatore, conducted the event ‘FITSTART’ on 25/07/2025 at Government Middle School, Vadavalli, an afternoon dedicated to fitness, focus and fun. This event was a refreshing journey through movement, laughter and learning. From guided stretches to interactive exercises, every moment brought a new spark of energy and unity. Led by Mr. Sankar Narayanan K, the session wasn’t just about exercise, it was about discovering strength in togetherness and joy in motion.`,
+    content: `"Stretch , Strengthen, Shine!"\nWe, the Rotaract Club of GCT Coimbatore, conducted the event ‘FITSTART’ on 25/07/2025 at Government Middle School, Vadavalli, an afternoon dedicated to fitness, focus and fun. This event was a refreshing journey through movement, laughter and learning. From guided stretches to interactive exercises, every moment brought a new spark of energy and unity. Led by Mr. Sankar Narayanan K, the session wasn’t just about exercise, it was about discovering strength in togetherness and joy in motion.`,
   },
   {
     id: 5,
