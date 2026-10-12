@@ -2342,7 +2342,7 @@ International Day of Sign Languages and promoting awareness about inclusive comm
     id: 324,
     eventName: 'SAFETY MODE ON',
     tenure: '2026-27',
-    picture: '/images/projects/2026-27/SAFETY MODE ON.jpeg',
+    picture: '/images/projects/2026-27/SAFETY MODE ON.jpg',
     content: `"One Safe Choice Can Save a Life."
 We, the Rotaract Club of GCT Coimbatore, successfully
 organized 'ROAD SAFETY MODE ON', a community
@@ -2355,7 +2355,7 @@ The event encouraged participants to follow traffic rules, make responsible choi
     id: 325,
     eventName: 'SHINE TOGETHER',
     tenure: '2026-27',
-    picture: '/images/projects/2026-27/SHINE TOGETHER.jpeg',
+    picture: '/images/projects/2026-27/SHINE TOGETHER.jpg',
     content: `"Together We Connect, Together We Grow, 
 Together We Shine!"
 We, the Rotaract Club of GCT Coimbatore, successfully
