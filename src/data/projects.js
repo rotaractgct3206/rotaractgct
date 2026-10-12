@@ -2163,8 +2163,192 @@ These are essential knowledge that may one day help students to save life by per
     tenure: '2021-22',
     picture: '/images/projects/2021-22/PONGAL THIRUVIZHA.png',
     content: `The event Pongal Thiruvizha is a club service event held on Pongal . The motive of the event was to build bonds between club members by celebrating Pongal in Thudiyalur . This event was filled with a lot of fun events and games . Majorily the talks and discussions were surrounding Pongal celebrations in the past adding a nostalgic feel to the event . Mnay games that we might have played in childhood were played , such as lemon and spoon , uriyadi . Hand crafts were made to decorate houses during Pongal.`,
-  }
-];
+  },
+  {
+    id: 309,
+    eventName: 'NEXA VERSE',
+    tenure: '2026-27',
+    picture: '/images/projects/2026-27/NEXA_VERSE.jpg',
+    content: `"Where friendships connect, teamwork
+grows, and bonds turn into memories."
+We, the Rotaract Club of GCT Coimbatore, successfully organized 'NEXA VERSE', a Friendship Day initiative under the Avenue of International Service, on 30/07/2026.
+The project brought members together through
+engaging activities that fostered friendship, teamwork communication, and cultural understanding, creating a fun and inclusive space to build meaningful connections.`,
+  },
+ {
+    id: 310,
+    eventName: 'DECODE',
+    tenure: '2026-27',
+    picture: '/images/projects/2026-27/DECODE.jpg',
+    content: ` "Know the roots, embrace the values, and
+serve with purpose."
+We, the Rotaract Club of GCT Coimbatore, successfully
+organized 'DECODE', a Club Service initiative, on
+31/07/2026, designed to introduce members to the
+history, values, structure, and traditions of Rotaract.
+The project provided an interactive platform for
+members to understand the movement better, 
+strengthen their sense of belonging, and inspire them to
+actively contribute to the club while upholding the true spirit of Rotaract.`,
+  }, 
+  {
+    id: 311,
+    eventName: 'FUNFUSION',
+    tenure: '2026-27',
+    picture: '/images/projects/2026-27/FUNFUSION.jpg',
+    content: `"Where fun meets teamwork, every moment
+becomes a memory."
+We, the Rotaract Club of GCT Coimbatore, successfully organized 'FUNFUSION', a Club Service initiative, on 04/08/2026, designed to bring members together through exciting team-based games and interactive activities.
+The event fostered teamwork, communication, creativity, 
+and healthy competition, while creating an enjoyable
+space for meaningful interactions and strengthening the bond among members.`,
+  },
+   {
+    id: 312,
+    eventName: 'CLASH OF CLANS',
+    tenure: '2026-27',
+    picture: '/images/projects/2026-27/CLASH OF CLANS.jpg',
+    content: `"Where teamwork sparks and every
+challenge brings us closer."
+We, the Rotaract Club of GCT Coimbatore, successfully organized 'CLASH OF CLANS', a Club Service initiative, on 05/09/2026, aimed at strengthening fellowship, 
+teamwork, and meaningful connections among members.
+The event encouraged coordination, leadership, 
+communication, problem-solving, and team spirit through
+engaging challenges, creating a lively atmosphere of healthy competition, unity, and friendship`,
+  },
+  {
+    id: 313,
+    eventName: 'YARNIVERSE',
+    tenure: '2026-27',
+    picture: '/images/projects/2026-27/YARNIVERSE.jpg',
+    content: `"Where Creativity Meets Purpose."
+We, the Rotaract Club of GCT Coimbatore, successfully organized 'YARNIVERSE', a fundraising initiative, on 16/08/2026, transforming creativity into meaningful service.
+The initiative featured handcrafted crochet creations, 
+with the proceeds supporting community service
+activities. It encouraged members to blend creativity.
+teamwork, entrepreneurship, and social responsibility,
+turning simple handmade creations into meaningful community impact.`,
+  },
+  {
+    id: 314,
+    eventName: 'PICK YOUR PRIDE',
+    tenure: '2026-27',
+    picture: '/images/projects/2026-27/PICK YOUR PRIDE.jpg',
+    content: `"Respect the Flag, Honour the Nation."
+We, the Rotaract Club of GCT Coimbatore, in
+collaboration with the Rotaract Club of United Ranchi,
+successfully organized 'PICK YOUR PRIDE', an
+International Service initiative, on 16/08/2026, to promote awareness about the respectful handling of the Indian National Flag.
+The initiative involved collecting fallen or unattended flags from public spaces and educating people about proper folding, storage, and respectful disposal
+practices, emphasizing the importance of treating the National Flag with dignity.`,
+  },
+  {
+    id: 315,
+    eventName: 'OUTLOUD',
+    tenure: '2026-27',
+    picture: '/images/projects/2026-27/OUTLOUD.jpg',
+    content: `"Every Conversation Builds Confidence, 
+Every Connection Creates Growth."
+We, the Rotaract Club of GCT Coimbatore, successfully organized 'OUTLOUD', a confidence-building initiative, on 17/08/2026, designed to encourage self-expression and confident communication.
+The event provided a friendly and supportive platform for participants to overcome hesitation, interact with new people, and step beyond their comfort zones
+through engaging conversations and meaningful interactions.`,
+  },
+   {
+    id: 316,
+    eventName: 'ARCLIGHT',
+    tenure: '2026-27',
+    picture: '/images/projects/2026-27/ARCLIGHT.jpg',
+    content: `"Every Talent Deserves a Spotlight!"
+We, the Rotaract Club of GCT Coimbatore, successfully organized 'ARCLIGHT', a talent-focused initiative, on 18/08/2026, providing students with a joyful and
+inclusive platform to discover, express, and celebrate their unique abilities.
+The event encouraged participants to step beyond their
+comfort zones, showcase their talents, and build
+confidence through creative and performance-based
+activities, celebrating individuality, creativity, and self-expression.`,
+  },
+  {
+    id: 317,
+    eventName: 'SAMUDRA',
+    tenure: '2026-27',
+    picture: '/images/projects/2026-27/SAMUDRA.jpg',
+    content: `Bridging Cultures, Building Connections."We, the Rotaract Club of GCT Coimbatore, RID 3206, in collaboration with the Rotaract Club of College of
+Chemical Sciences, Sri Lanka, RID 3220, successfully
+organized 'SAMUDRA’, an International Service
+initiative, on 22/08/2026, to strengthen international fellowship and promote meaningful cultural exchange.The initiative brought participants together through language exchange, cultural games, fun challenges, and conversations, encouraging them to appreciate the similarities and unique identities of both nations while building meaningful connections.`,
+  },
+   {
+    id: 318,
+    eventName: "INHERIT'26",
+    tenure: '2026-27',
+    picture: "/images/projects/2026-27/INHERIT'26.jpg",
+    content: `"A new chapter begins, carrying forward a
+legacy of service, leadership, and togetherness -
+INHERIT'26 marks the beginning of a new journey."
+With pride and enthusiasm, the Rotaract Club of GCT
+Coimbatore steps into a new tenure through
+INHERIT'26, celebrating the transition of leadership and the continuity of our commitment to service.
+Carrying forward the values of the past and embracing the possibilities ahead, we look forward to a year of meaningful initiatives, collective growth, and lasting impact.`,
+  },
+  {
+    id: 319,
+    eventName: "INSIGHT'26",
+    tenure: '2026-27',
+    picture: "/images/projects/2026-27/INSIGHT'26.jpg",
+    content: `"Every milestone becomes meaningful when ideas, passion, and purpose come together to create an impact."
+With immense joy and gratitude, we, the Rotaract Club
+of GCT Coimbatore, are delighted to unfold the highlights of INSIGHT'26.
+As our journey through EPIC'26 continues, INSIGHT'26brings together ideas, perspectives, and experiences that strengthen our spirit of service and togetherness.The memories created and connections made become meaningful steps towards the impact we aspire to create.`,
+  },
+   {
+    id: 320,
+    eventName: 'VISIONAID',
+    tenure: '2026-27',
+    picture: '/images/projects/2026-27/VISIONAID.jpg',
+    content: `"A Clearer Vision, A Healthier Tomorrow!"We, the Rotaract Club of GCT Coimbatore, successfully organized 'VISIONAID', a Community Service initiative, on 09/09/2026, dedicated to promoting accessible eye care among the non-teaching staff and mess workers of our college.
+The initiative provided basic vision testing and eye
+examinations, along with awareness about regular eye check-ups, proper eye care, and maintaining healthy vision, encouraging participants to prioritize their eye health.`,
+  },
+  {
+    id: 321,
+    eventName: 'SUVAI',
+    tenure: '2026-27',
+    picture: '/images/projects/2026-27/SUVAI.jpg',
+    content: `Create with Passion, Cook with
+Imagination, Celebrate Together!"
+We, the Rotaract Club of GCT Coimbatore, successfully
+organized 'SUVAI', a Club Service initiative, on
+16/09/2026, bringing members together through a creative zero-fuel cooking challenge.
+The event encouraged participants to explore healthy and delicious recipes while showcasing their creativity, teamwork, and culinary skills, creating a fun-filled
+experience of fellowship and collaboration`,
+  },
+   {
+    id: 322,
+    eventName: 'THRIVE-THE START',
+    tenure: '2026-27',
+    picture: '/images/projects/2026-27/THRIVE-THE START.jpg',
+    content: `"Skills Today, Independence Tomorrow."We, the Rotaract Club of GCT Coimbatore, successfully organized 'THRIVE - THE START', a practical Club
+Service initiative, on 22/09/2026, introducing
+participants to essential skills for independent living.The session covered financial management, home responsibilities, personal needs, organization, 
+emergency preparedness, and essential documents and preparedness.
+independent living with greater confidence and
+legal awareness, empowering participants`,
+  },
+ {
+    id: 323,
+    eventName: 'BEYOND WORDS',
+    tenure: '2026-27',
+    picture: '/images/projects/2026-27/BEYOND THE WORDS.jpg',
+    content: `"When Words Fall Silent, Connection
+Speaks."
+We, the Rotaract Club of GCT Coimbatore, successfully organized 'BEYOND WORDS', an International Service initiative, on 23/09/2026, commemorating the
+International Day of Sign Languages and promoting awareness about inclusive communication.
+The session introduced participants to basic sign
+language, including alphabets and 20 essential everyday
+signs, encouraging them to explore communication
+beyond spoken words and fostering greater awareness, understanding, and inclusivity.`,
+  },
+  
+  ];
 
 // Get all unique tenures
 export const projectTenures = [
