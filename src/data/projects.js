@@ -2239,8 +2239,7 @@ We, the Rotaract Club of GCT Coimbatore, in
 collaboration with the Rotaract Club of United Ranchi,
 successfully organized 'PICK YOUR PRIDE', an
 International Service initiative, on 16/08/2026, to promote awareness about the respectful handling of the Indian National Flag.
-The initiative involved collecting fallen or unattended flags from public spaces and educating people about proper folding, storage, and respectful disposal
-practices, emphasizing the importance of treating the National Flag with dignity.`,
+The initiative involved collecting fallen or unattended flags from public spaces and educating people about proper folding, storage, and respectful disposal practices, emphasizing the importance of treating the National Flag with dignity.`,
   },
   {
     id: 315,
@@ -2250,8 +2249,7 @@ practices, emphasizing the importance of treating the National Flag with dignity
     content: `"Every Conversation Builds Confidence, 
 Every Connection Creates Growth."
 We, the Rotaract Club of GCT Coimbatore, successfully organized 'OUTLOUD', a confidence-building initiative, on 17/08/2026, designed to encourage self-expression and confident communication.
-The event provided a friendly and supportive platform for participants to overcome hesitation, interact with new people, and step beyond their comfort zones
-through engaging conversations and meaningful interactions.`,
+The event provided a friendly and supportive platform for participants to overcome hesitation, interact with new people, and step beyond their comfort zones through engaging conversations and meaningful interactions.`,
   },
    {
     id: 316,
@@ -2326,11 +2324,8 @@ experience of fellowship and collaboration`,
     eventName: 'THRIVE-THE START',
     tenure: '2026-27',
     picture: '/images/projects/2026-27/THRIVE-THE START.jpg',
-    content: `"Skills Today, Independence Tomorrow."We, the Rotaract Club of GCT Coimbatore, successfully organized 'THRIVE - THE START', a practical Club
-Service initiative, on 22/09/2026, introducing
-participants to essential skills for independent living.The session covered financial management, home responsibilities, personal needs, organization, 
-emergency preparedness, and essential documents and preparedness.
-independent living with greater confidence and
+    content: `"Skills Today, Independence Tomorrow."We, the Rotaract Club of GCT Coimbatore, successfully organized 'THRIVE - THE START', a practical Club Service initiative, on 22/09/2026, introducing participants to essential skills for independent living.The session covered financial management, home responsibilities, personal needs, organization, 
+emergency preparedness, and essential documents and preparedness.independent living with greater confidence and
 legal awareness, empowering participants`,
   },
  {
@@ -2341,11 +2336,33 @@ legal awareness, empowering participants`,
     content: `"When Words Fall Silent, Connection
 Speaks."
 We, the Rotaract Club of GCT Coimbatore, successfully organized 'BEYOND WORDS', an International Service initiative, on 23/09/2026, commemorating the
-International Day of Sign Languages and promoting awareness about inclusive communication.
-The session introduced participants to basic sign
-language, including alphabets and 20 essential everyday
-signs, encouraging them to explore communication
-beyond spoken words and fostering greater awareness, understanding, and inclusivity.`,
+International Day of Sign Languages and promoting awareness about inclusive communication.The session introduced participants to basic sign language, including alphabets and 20 essential everyday signs, encouraging them to explore communication beyond spoken words and fostering greater awareness, understanding, and inclusivity.`,
+  },
+  {
+    id: 324,
+    eventName: 'SAFETY MODE ON',
+    tenure: '2026-27',
+    picture: '/images/projects/2026-27/SAFETY MODE ON.jpeg',
+    content: `"One Safe Choice Can Save a Life."
+We, the Rotaract Club of GCT Coimbatore, successfully
+organized 'ROAD SAFETY MODE ON', a community
+service initiative, on 29/09/2026, promoting road safety
+awareness through interactive quizzes, traffic situations,
+and safety simulations.
+The event encouraged participants to follow traffic rules, make responsible choices, and prioritize safety on every journey.`,
+  },
+   {
+    id: 325,
+    eventName: 'SHINE TOGETHER',
+    tenure: '2026-27',
+    picture: '/images/projects/2026-27/SHINE TOGETHER.jpeg',
+    content: `"Together We Connect, Together We Grow, 
+Together We Shine!"
+We, the Rotaract Club of GCT Coimbatore, successfully
+organized SHINE TOGE THER, a team-building initiative,
+on 30/09/2026, fostering teamwork, trust 
+communication, and coordination through fun and engaging challenges.
+The session encouraged participants to strengthen team bonds, explore Rotaract, and discover Board portfolios while celebrating unity and collaboration.`,
   },
   
   ];
