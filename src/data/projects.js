@@ -2364,7 +2364,130 @@ on 30/09/2026, fostering teamwork, trust
 communication, and coordination through fun and engaging challenges.
 The session encouraged participants to strengthen team bonds, explore Rotaract, and discover Board portfolios while celebrating unity and collaboration.`,
   },
-  
+  {
+    id: 326,
+    eventName: 'AASAN',
+    tenure: '2026-27',
+    picture: '/images/projects/2026-27/AASAN.jpeg',
+    content: `"Celebrating the Minds That Shape Our
+Future!"We, the Rotaract Club of GCT Coimbatore, successfully organized 'AASAN', a Teachers' Day celebration, on 05/10/2026, expressing heartfelt gratitude to our
+teachers for their invaluable guidance and dedication.Rotaract members personally greeted the teachers and presented specially prepared greeting cards as a token of appreciation, celebrating their lasting impact on our lives. `,
+  },
+  {
+    id: 327,
+    eventName: 'SOULSPARK',
+    tenure: '2026-27',
+    picture: '/images/projects/2026-27/SOULSPARK.jpeg',
+    content: `"Turning Waste into Wonders, Creativity into
+Change!" We, the Rotaract Club of GCT Coimbatore, successfully organized 'SOULSPARK', a creative fundraising initiative, on 04/10/2026, promoting sustainability and social
+responsibility through creativity
+The event focused on transforming discarded glass bottles into beautiful handmade vases, giving waste a meaningful second life while contributing towards a greater cause.`,
+  },
+   {
+    id: 328,
+    eventName: 'CHARTER GALA',
+    tenure: '2026-27',
+    picture: '/images/projects/2026-27/CHARTER GALA.jpeg',
+    content: `"Celebrating Togetherness, Creating
+Memories!" We, the Rotaract Club of GCT Coimbatore, successfully
+organized 'CHARTER GALA, a club service initiative, on
+05/10/2026, celebrating friendship, unity, and togetherness among Rotaractors.
+The event featured fun-filled games, exciting activities, 
+and interactive challenges that strengthened team
+bonds, encouraged connections, and created unforgettable memories.`,
+  },
+{
+    id: 329,
+    eventName: 'SOLESTICE',
+    tenure: '2026-27',
+    picture:'/images/projects/2026-27/SOLESTICE.jpeg',
+    content: `"Kindness in Action, Hope in Motion!"
+We, the Rotaract Club of GCT Coimbatore, successfully organized 'SOLESTICE', a community service initiative, on 05/10/2026 at Gandhipuram, Coimbatore, spreading kindness, compassion, and hope.
+The initiative focused on making a meaningful difference
+in the community through small acts of kindness
+reflecting the spirit of humanity and social responsibility.`,
+  },
+{
+    id: 330,
+    eventName: 'POWERPLAY',
+    tenure: '2026-27',
+    picture: '/images/projects/2026-27/POWERPLAY.jpeg',
+    content: `"Play Together, Bond Stronger, Create
+Memories!" We, the Rotaract Club of GCT Coimbatore, successfully organized 'POWER PLAY', a club service initiative, on 05/10/2026 at SR Soccer Turf, celebrating teamwork, friendship, and sportsmanship.
+The event brought Rotaractors together through
+energetic games and friendly competition, strengthening bonds and creating memorable moments filled with fun and togetherness.`,
+  },
+  {
+    id: 331,
+    eventName: 'PLASTI-K.O.',
+    tenure: '2026-27',
+    picture: '/images/projects/2026-27/PLASTIKO.jpeg',
+    content: `"Collect Today, Protect Tomorrow!"
+We, the Rotaract Club of GCT Coimbatore, successfully organized 'PLASTI-K.0.', a Community service initiative on 06/10/2026, promoting sustainability and responsible plastic waste management.
+The event brought Rotaractors together to collect
+plastic waste across the GCT campus, raise awareness about responsible plastic usage, and contribute towards a cleaner, greener environment.`,
+  },
+  {
+    id: 332,
+    eventName: 'THE WRITE WAY',
+    tenure: '2026-27',
+    picture: '/images/projects/2026-27/THE WRITE WAY.jpeg',
+    content: `"Write Smart, Communicate Better!"
+We, the Rotaract Club of GCT Coimbatore, successfully
+organized 'THE WRITE WAY', a professional service initiative, on 07/10/2026, enhancing professional communication and email writing skills.
+The session helped participants understand effective
+email structure, appropriate tone, professional etiquette, 
+and common mistakes through interactive activities, 
+encouraging clear, confident, and professional
+communication`,
+  },
+  {
+    id: 333,
+    eventName: 'MANAM PESUM NERAM',
+    tenure: '2026-27',
+    picture: '/images/projects/2026-27/MANAM PESUM NERAM.jpeg',
+    content: `"Every Heart Has a Story Worth Hearing!"We, the Rotaract Club of GCT Coimbatore, successfully organized 'மனம் பேசும் நேரம்', an International
+Service initiative, on 10/10/2026, on the occasion of World Mental Health Day, promoting emotional
+wel-being, compassion, and meaningful connections.The event brought Rotaractors and elderly residents together through heartfelt conversations, shared memories, and companionship, spreading warmth, care, and a sense of belonging.`,
+  },
+  {    id: 334,
+    eventName: 'E-VIDAI',
+    tenure: '2026-27',
+    picture: '/images/projects/2026-27/E-VIDAI.jpeg',
+    content: `"Recycle Today, Protect Tomorrow!"
+We, the Rotaract Club of GCT Coimbatore, successfully organized ’E-VIDAI', a community service initiative, on 10/10/2026, promoting responsible e-waste management and environmental sustainability
+The initiative focused on raising awareness among electronic shop owners and workers about proper
+e-waste collection, segregation, storage, and disposal encouraging eco-friendly practices for a cleaner and
+greener future.`,
+  },
+  {
+    id: 335,
+    eventName: 'SAKHI',
+    tenure: '2026-27',
+    picture: '/images/projects/2026-27/SAKHI.jpeg',
+    content: `"Together in Care, Together in Strength!"We, the Rotaract Club of GCT Coimbatore, successfully organized 'SAKHI', a lnternational service initiative, on 11/10/2026, promoting menstrual hygiene, dignity, and well-being among girls.
+The initiative focused on providing essential menstrual hygiene support, spreading awareness about menstrual health, and empowering girls with care, confidence, and dignity.`,
+  },
+  {
+    id: 336,
+    eventName: 'SOULSPARK-PHASE 2',
+    tenure: '2026-27',
+    picture: '/images/projects/2026-27/SOULSPARKE PHASE-2.jpeg',
+    content: `"Another Spark, Another Change!"
+We, the Rotaract Club of GCT Coimbatore, successfully
+organized 'SOULSPARK - PHASE 2', a creative fundraising initiative, on 11/10/2026, promoting sustainability and social responsibility.
+The event focused on transforming discarded glass bottles into beautiful handmade vases, giving waste a meaningful second life while raising funds to support community service initiatives.`,
+  },
+  {
+    id: 337,
+    eventName: 'REFLECT & PROTECT',
+    tenure: '2026-27',
+    picture: '/images/projects/2026-27/REFLECT&PROTECT.jpeg',
+    content: `"Be Seen, Be Safe, Reflect the Right Way!"We, the Rotaract Club of GCT Coimbatore, successfully organized REFLECT & PROTECT', a District Priority
+Project, on 11/10/2026, promoting nighttime road safety and accident prevention.
+The initiative focused on applying high-visibility
+reflective tapes to barricades, road barriers, and heavy vehicles, improving visibility in low-light conditions and contributing towards safer roads for everyone.`,
+  },
   ];
 
 // Get all unique tenures
